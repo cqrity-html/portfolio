@@ -54,6 +54,12 @@ a {
   background-position: left;
 }
 
+.page-header a:hover,
+.page-footer a:hover {
+  transition: 300ms ease-out;
+  text-decoration: underline;
+}
+
 .header-email {
   padding-left: 30px;
   background-image: url('img/icon-email-header.svg');
@@ -109,13 +115,28 @@ a {
 .intro {
   background-color: white;
   padding: 40px 40px 0 40px;
+  position: relative;
+}
+
+.intro::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  background: url('img/separator.png');
 }
 
 .intro-section {
   display: flex;
   gap: 140px;
   justify-content: center;
-  padding: 40px 100px 0 100px;
+  align-items: center;
+  padding: 40px 100px 40px 110px;
+  background: url('img/back.jpg') no-repeat;
+}
+
+.intro-section p {
+  padding-bottom: 10px;
 }
 
 .intro-photo {
@@ -125,12 +146,16 @@ a {
 }
 
 .subheading {
-  margin: 0 0 56px;
+  margin: 0 0 26px;
   font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
   font-size: 44px;
   line-height: 80px;
   font-weight: 400;
   text-align: center;
+}
+
+.intro .subheading {
+  margin-bottom: 0;
 }
 
 .user-image {
@@ -189,7 +214,7 @@ a {
 
 .portfolio {
   background-color: white;
-  padding: 50px 0 20px 0;
+  padding: 0 0 20px 0;
 }
 
 .projects {
@@ -285,6 +310,7 @@ a {
 
 .works-link:hover {
   box-shadow: 0 0 30px 0 #908a88;
+  transition: 300ms ease-out;
 }
 
 .works-photo,
