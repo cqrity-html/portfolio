@@ -6,71 +6,102 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Портфолио Junior верстальщика</title>
     <meta name="description" content="Бондарь Алексей">
-    <meta name="keywords" content="cнабжение музыка компьютеры">
+    <meta name="keywords" content="Junior фронтенд-разработчик">
   </head>
 
   <body>
-    <header class="page-header">
+    <div class="page-wrapper">
+      <header class="page-header">
         <div class="container">
             <a class="header-email" href="mailto:cqrity@yandex.ru">cqrity@yandex.ru</a>
             <a class="header-phone" href="tel:+79301703440">+79301703440</a>
             <a href="https://vk.com/cqrity">VK</a>
+            <a href="https://github.com/cqrity-html">GitHub</a>
         </div>
-           </header>
-
-    <section class="hero-image">
-        <div class="container">
-      <h1 class="heading">Алексей Бондарь</h1>
-      <p>Junior верстальщик</p>
-        </div>
-    </section>
-
-    <section class="intro">
-        <div class="container">
-      <h2 class="subheading">Давайте познакомимся</h2>
-      <h3>Родной город: Ефремов <br>
-          Языки: Русский <br></h3>
-      <p>Снабженец</p>
-      <h3>Умею любить</h3>
-      <p>И понимать</p>
-        </div>
-    </section>
-
-    <section class="portfolio">
+      </header>
+      <section class="hero-image">
+          <div class="container">
+            <h1 class="heading">Алексей Бондарь</h1>
+            <p>Junior фронтенд-разработчик</p>
+          </div>
+      </section>
+      <section class="intro">
+          <div class="container">
+            <h2 class="subheading">Давайте познакомимся</h2>
+            <div class="intro-section">
+              <p>Снабженец</p>
+              <img class="intro-photo" src="img/userpic.png">
+            </div>
+          </div>
+      </section>
+      <section class="portfolio">
         <div class="container">
           <h2 class="subheading">Мои работы</h2>
           <div class="works">
-            <ul>
-              <li>
-                <a>
-                  <img>
-                  <h3>Интернет-магазин бытовой техники "Техномарт"</h3>
-                  <p>Мой первый сайт.</p>
+            <ul class="works-list">
+              <li class="works-item">
+                <a href="https://cqrity-html.github.io/1785841-technomart-31/index.html" class="works-link">
+                  <img class="works-photo" src="img/technomart.png">
+                  <h3>Интернет-магазин техники "Техномарт"</h3>
+                  <p>Статичная вёрстка.<br>
+                  Использованные технологии: HTML, CSS, JavaScript</p>
                 </a>
               </li>
-              <li>
-                <a>
-                  <img>
+              <li class="works-item">
+                <a href="https://cqrity-html.github.io/1785841-sedona-23/" class="works-link">
+                  <img class="works-photo" src="img/sedona.png">
                   <h3>Сайт курортного городка Седона</h3>
-                  <p>Статический блог про обучение HTML и CSS.</p>
+                  <p>Адаптивная вёрстка.<br>
+                  Использованные технологии: HTML, CSS, JavaScript, SASS, Gulp</p>
                 </a>
               </li>
-              <li>
-                <a>
-                  <img>
-                  <h3>Фото-соцсеть Кекстаграм</h3>
-                  <p>Статический блог про обучение HTML и CSS.</p>
+              <li class="works-item">
+                <a href="https://cqrity-html.github.io/1785841-kekstagram-24/" class="works-link">
+                  <img class="works-photo" src="img/kekstogram.png">
+                  <h3>Фото социальная сеть Кекстаграм</h3>
+                  <p>Интерактивный интерфейс.<br>
+                    Использованные технологии: HTML, CSS, JavaScript</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <h2 class="subheading">Мои сертификаты</h2>
+          <div class="certificates">
+            <ul class="certificates-list">
+              <li class="certificates-item">
+                <a class="certificates-link">
+                  <img class="certificates-photo" src="img/html_css_static.jpg">
+                  <h3>HTML и CSS</h3>
+                  <p>Профессиональная вёрстка сайтов</p>
+                </a>
+              </li>
+              <li class="certificates-item">
+                <a class="certificates-link">
+                  <img class="certificates-photo" src="img/html_css_adaptive.jpg">
+                  <h3>HTML и CSS</h3>
+                  <p>Адаптивная вёрстка и автоматизация</p>
+                </a>
+              </li>
+              <li class="certificates-item">
+                <a class="certificates-link">
+                  <img class="certificates-photo" src="img/js.jpg">
+                  <h3>JavaScript</h3>
+                  <p>Профессиональная разработка веб-интерфейсов</p>
                 </a>
               </li>
             </ul>
           </div>
         </div>
-    </section>
-
-    <footer class="page-footer">
-        <div class="container">
-      <a href="https://vk.com/cqrity">VK</a>
-        </div>
-    </footer>
+      </section>
+      <footer class="page-footer">
+        <p class="footer-copyright">&#169Алексей Бондарь, 2021</p>
+          <div class="container">
+            <a class="header-email" href="mailto:cqrity@yandex.ru">cqrity@yandex.ru</a>
+            <a class="header-phone" href="tel:+79301703440">+79301703440</a>
+            <a href="https://vk.com/cqrity">VK</a>
+            <a href="https://github.com/cqrity-html">GitHub</a>
+          </div>
+      </footer>
+    </div>
   </body>
 </html>
