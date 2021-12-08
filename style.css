@@ -30,7 +30,7 @@ a {
 }
 
 .page-header {
-  margin: 0 0 60px;
+  margin: 0 0 35px;
   padding: 32px 0 32px;
 }
 
@@ -64,8 +64,18 @@ a {
   background-image: url('img/icon-phone-header.svg');
 }
 
+.header-vk {
+  padding-left: 38px;
+  background-image: url('img/icon_vk.svg');
+}
+
+.header-github {
+  padding-left: 25px;
+  background-image: url('img/icon_github.svg');
+}
+
 .hero-image {
-  margin-bottom: 125px;
+  margin-bottom: 47px;
   color: white;
 }
 
@@ -78,8 +88,15 @@ a {
 .heading {
   margin: 0 0 16px;
   font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
-  font-size: 68px;
-  line-height: 96px;
+  font-size: 48px;
+  line-height: 76px;
+  font-weight: 400;
+}
+
+.heading-text {
+  font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
+  font-size: 28px;
+  line-height: 56px;
   font-weight: 400;
 }
 
@@ -91,14 +108,14 @@ a {
 
 .intro {
   background-color: white;
-  padding-top: 40px;
+  padding: 40px 40px 0 40px;
 }
 
 .intro-section {
   display: flex;
-  gap: 240px;
+  gap: 140px;
   justify-content: center;
-  padding: 20px 30px;
+  padding: 40px 100px 0 100px;
 }
 
 .intro-photo {
@@ -110,7 +127,7 @@ a {
 .subheading {
   margin: 0 0 56px;
   font-family: 'Old Standard TT', 'Times', 'Times New Roman', serif;
-  font-size: 64px;
+  font-size: 44px;
   line-height: 80px;
   font-weight: 400;
   text-align: center;
@@ -172,7 +189,7 @@ a {
 
 .portfolio {
   background-color: white;
-  padding: 140px 0 20px 0;
+  padding: 50px 0 20px 0;
 }
 
 .projects {
@@ -258,16 +275,15 @@ a {
   width: 395px;
 }
 
-.works-link,
-.certificates-link {
+.works-link {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5%;
+  padding: 30px;
 }
 
-.works-link:hover,
-.certificates-link:hover {
+.works-link:hover {
   box-shadow: 0 0 30px 0 #908a88;
 }
 
