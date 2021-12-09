@@ -29,6 +29,8 @@ a {
   box-sizing: border-box;
 }
 
+/*HEADER*/
+
 .page-header {
   margin: 0 0 35px;
   padding: 32px 0 32px;
@@ -38,12 +40,6 @@ a {
   max-width: 1366px;
   text-align: left;
   padding-left: 40px;
-}
-
-.page-footer .container {
-  max-width: 1366px;
-  text-align: right;
-  padding: 15px 0 0 0;
 }
 
 .page-header a {
@@ -60,22 +56,22 @@ a {
   text-decoration: underline;
 }
 
-.header-email {
+.link-email {
   padding-left: 30px;
   background-image: url('img/icon-email-header.svg');
 }
 
-.header-phone {
+.link-phone {
   padding-left: 25px;
   background-image: url('img/icon-phone-header.svg');
 }
 
-.header-vk {
+.link-vk {
   padding-left: 38px;
   background-image: url('img/icon_vk.svg');
 }
 
-.header-github {
+.link-github {
   padding-left: 25px;
   background-image: url('img/icon_github.svg');
 }
@@ -112,18 +108,11 @@ a {
   line-height: 48px;
 }
 
+/*INTRO*/
+
 .intro {
   background-color: white;
   padding: 40px 40px 0 40px;
-  position: relative;
-}
-
-.intro::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 200px;
-  background: url('img/separator.png');
 }
 
 .intro-section {
@@ -175,105 +164,11 @@ a {
   margin: 0 0 32px;
 }
 
-.skills-list {
-  margin: 0;
-  padding: 0;
-  position: center;
-}
-
-.skills-list dt {
-  padding-left: 32px;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.skill-html {
-  background-image: url('img/icon-html.svg');
-}
-
-.skill-css {
-  background-image: url('img/icon-css.svg');
-}
-
-.level {
-  margin: 4px 0 16px;
-  padding: 0;
-  height: 14px;
-  font-size: 0;
-  background-color: #ffffff;
-  border: 1px solid #86c3fa;
-  border-radius: 8px;
-}
-
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #288be6;
-  border-radius: 6px;
-}
+/*PORTFOLIO*/
 
 .portfolio {
   background-color: white;
   padding: 0 0 20px 0;
-}
-
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.projects li {
-  margin: 0 0 80px;
-}
-
-.project-image {
-  margin: 0 0 24px;
-  text-align: center;
-}
-
-.projects p {
-  margin: 0 0 24px;
-}
-
-.button {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #288be6;
-  color: #ffffff;
-}
-
-.page-footer {
-  padding: 0 20px;
-  background-color: #00417d;
-  color: #ffffff;
-  display: flex;
-}
-
-.page-footer a {
-  margin-left: 56px;
-  color: inherit;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.footer-email {
-  padding-left: 30px;
-  background-image: url('img/icon-email-footer.svg');
-}
-
-.footer-phone {
-  padding-left: 25px;
-  background-image: url('img/icon-phone-footer.svg');
-}
-
-.footer-copyright {
-  margin-left: auto;
 }
 
 .works-list,
@@ -327,6 +222,35 @@ a {
   width: 300px;
 }
 
+/*FOOTER*/
+
+.page-footer {
+  padding: 10px 20px;
+  background-color: #00417d;
+  color: #ffffff;
+  display: flex;
+}
+
+.page-footer .container {
+  max-width: 1366px;
+  text-align: right;
+  padding: 15px 0 0 0;
+}
+
+.page-footer a {
+  margin-left: 56px;
+  color: inherit;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.footer-copyright {
+  margin-left: auto;
+}
+
+/*MODAL*/
+
 .modal-open {
   height: 100vh;
   overflow: hidden;
@@ -335,10 +259,12 @@ a {
 .big-picture__preview {
   position: absolute;
   top: 60px;
-  left: 50%;
-  max-width: 600px;
-  min-height: 600px;
+  left: 33%;
+  width: 594px;
+  height: 779px;
   padding-bottom: 60px;
+  border: 7px solid white;
+  border-radius: 7px;
 }
 
 .overlay {
@@ -362,4 +288,37 @@ a {
   top: 0;
   left: 100%;
   margin-left: 10px;
+}
+
+.cancel {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  width: 42px;
+  height: 42px;
+
+  font-size: 0;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url('img/icon-cross.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 0;
+  border-radius: 2px;
+
+  opacity: 0.6;
+}
+
+.cancel:hover,
+.cancel:focus {
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.cancel:active {
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
 }
