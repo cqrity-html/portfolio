@@ -255,12 +255,12 @@ a {
 
 .works-photo {
   height: 245px;
-  width: 265px;
+  max-width: 265px;
 }
 
 .certificates-photo {
   height: 400px;
-  width: 200px;
+  max-width: 200px;
 }
 
 /*FOOTER*/
