@@ -195,7 +195,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  /* gap: 30px; */
+  gap: 30px;
   padding: 20px 0 40px 0;
   margin: 0;
   -webkit-box-pack: center;
@@ -210,7 +210,7 @@ a {
 }
 
 .works-item {
-  width: 395px;
+  width: 365px;
 }
 
 .certificates-item {
@@ -249,10 +249,13 @@ a {
 
 .works-photo,
 .certificates-photo {
-  height: 265px;
-  width: 393px;
   background-color: #c0c0c0;
   margin-bottom: 10px;
+}
+
+.works-photo {
+  height: 245px;
+  width: 365px;
 }
 
 .certificates-photo {
