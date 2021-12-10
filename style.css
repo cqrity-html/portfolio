@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 body {
   margin: 0;
   min-width: 960px;
@@ -19,6 +26,7 @@ a {
 .page-wrapper {
   max-width: 1366px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 30px 0 #908a88;
   box-shadow: 0 0 30px 0 #908a88;
 }
 
@@ -26,6 +34,7 @@ a {
   max-width: 1366px;
   margin: 0 auto;
   padding: 0 16px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -52,6 +61,8 @@ a {
 
 .page-header a:hover,
 .page-footer a:hover {
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
   text-decoration: underline;
 }
@@ -116,9 +127,15 @@ a {
 }
 
 .intro-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 140px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 40px 100px 40px 110px;
   background: url('img/back.jpg') no-repeat;
@@ -173,11 +190,15 @@ a {
 
 .works-list,
 .certificates-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   gap: 30px;
   padding: 20px 0 40px 0;
   margin: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
@@ -196,8 +217,15 @@ a {
 
 .works-link,
 .certificates-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 5%;
   padding: 30px;
@@ -205,7 +233,10 @@ a {
 
 .works-link:hover,
 .certificates-link:hover {
+  -webkit-box-shadow: 0 0 30px 0 #908a88;
   box-shadow: 0 0 30px 0 #908a88;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
 }
 
@@ -228,6 +259,8 @@ a {
   padding: 10px 20px;
   background-color: #00417d;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
