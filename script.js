@@ -7,7 +7,7 @@ for (let i = 0; i < certificateLinks.length; i++) {
   certificateLinks[i].addEventListener('click', function (evt) {
     evt.preventDefault();
     certificatePreview.classList.remove('hidden');
-    certificateImage.src = evt.target.src;
+    certificateImage.src = `img/${i}.jpg`;
     document.body.classList.add('modal-open');
     document.addEventListener('click', onRandomClick);
     previewClose.addEventListener('click', closeFullSize);
