@@ -33,7 +33,7 @@ export const works = [
     },
     {
         name: "6cities",
-        url: "https://cqrity-html.github.io/1785841-sedona-23/",
+        url: "https://six-cities-8.vercel.app/",
         photoSrc: "img/six-cities.jpg",
         heading: 'Сервис аренды жилья "6 Cities"',
         description:
